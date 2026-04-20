@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<package format="3">
+  <name>amr_nav</name>
+  <version>0.0.0</version>
+  <description>AMR Navigation with AprilTag</description>
+
+  <maintainer email="126012050@sastra.ac.in">sugant</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- BUILD TOOL -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- REQUIRED DEPENDENCIES -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>amr_interfaces</depend>
+  <!-- FOR CUSTOM MESSAGE -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- TEST (KEEP AS IS) -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+
+</package>
